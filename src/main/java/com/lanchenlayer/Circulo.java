@@ -1,12 +1,10 @@
 package com.lanchenlayer;
 
-import org.jetbrains.annotations.NotNull;
-
 public class Circulo {
     private int raio;
 
 
-    public Circulo(@NotNull Quadrado quadrado) {
+    public Circulo(Quadrado quadrado) {
         this.raio = quadrado.getLado() / 2;
     }
 
