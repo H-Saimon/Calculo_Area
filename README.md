@@ -1,175 +1,150 @@
 # Calculo_Area
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)](https://github.com/usuario/Calculo_Area/releases/tag/v1.0.0)
-[![Issues](https://img.shields.io/github/issues/usuario/Calculo_Area?style=for-the-badge)](https://github.com/usuario/Calculo_Area/issues)
-[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
-[![Language](https://img.shields.io/github/languages/top/usuario/Calculo_Area?style=for-the-badge)](https://github.com/usuario/Calculo_Area)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/usuario/Calculo_Area/maven.yml?branch=main&style=for-the-badge)](https://github.com/usuario/Calculo_Area/actions)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/) [![Issues](https://img.shields.io/github/issues/H-Saimon/Calculo_Area?style=for-the-badge)](https://github.com/H-Saimon/Calculo_Area/issues) [![License](https://img.shields.io/github/license/H-Saimon/Calculo_Area?style=for-the-badge)](https://github.com/H-Saimon/Calculo_Area/blob/main/LICENSE) [![Last Commit](https://img.shields.io/github/last-commit/H-Saimon/Calculo_Area?style=for-the-badge)](https://github.com/H-Saimon/Calculo_Area/commits/main) [![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellowgreen?style=for-the-badge)]
 
 ---
 
-## 📋 Descrição do Projeto
+## 📋 Descrição
 
-O **Calculo_Area** é uma aplicação desenvolvida em Java que tem como objetivo facilitar o cálculo de áreas de diferentes formas geométricas, oferecendo soluções rápidas, precisas e confiáveis. Destinado a estudantes, educadores e profissionais de diversas áreas que necessitam realizar cálculos geométricos de forma prática, o projeto proporciona uma arquitetura limpa e eficiente baseada no padrão Maven para garantir escalabilidade, manutenção simplificada e robustez técnica.
+O **Calculo_Area** é uma aplicação desenvolvida em Java para cálculo eficiente e preciso de áreas de diversas formas geométricas. O projeto tem como objetivo facilitar e agilizar os cálculos geométricos para estudantes, educadores e profissionais da engenharia e arquitetura, entre outros, oferecendo uma solução simples, robusta e escalável.
 
-Diferencial técnico do projeto inclui o uso de boas práticas de desenvolvimento Java, estrutura modularizada para facilitar extensão e testes automatizados garantindo a qualidade do código.
+O sistema foi construído utilizando as melhores práticas de desenvolvimento Java, estruturado em padrão Maven, garantindo fácil manutenção, extensibilidade e integração com ferramentas modernas de build e teste.
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- Cálculo de área para múltiplas formas geométricas (exemplos típicos: círculo, retângulo, triângulo, etc.)  
-- Interface programática simples para entrada dos dados geométricos  
-- Validação básica das entradas para garantir consistência dos cálculos  
-- Estrutura de testes unitários automatizados para garantir a precisão das implementações  
-- Utilização do Maven para compilação, execução e gerenciamento de dependências  
+- Cálculo da área de diferentes formas geométricas como:
+  - Retângulo
+  - Quadrado
+  - Círculo
+  - Triângulo
+  - Outros formatos geométricos, conforme implementação futura.
+- Entrada de dados via interface (console ou GUI, conforme implementação).
+- Validação dos dados de entrada para evitar cálculos incorretos.
+- Modularização clara seguindo estrutura Maven padrão.
+- Cobertura por testes unitários que garantem a integridade dos cálculos.
+- Suporte para execução em ambiente Java padrão (mínimo Java 11).
 
 ---
 
 ## 🛠 Tecnologias Utilizadas
 
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
-[![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)](https://maven.apache.org/)
-
-- **Java 11+** – Linguagem de programação principal  
-- **Apache Maven** – Gerenciamento de build e dependências  
-- Estrutura padrão Maven para organização modular (src/main/java, src/test/java)  
-- Frameworks e bibliotecas testadas dependem do pom.xml (JUnit ou similar para testes)  
+- **Java 11** ou superior
+- **Apache Maven** para gerenciamento de dependências, build e execução de testes
+- Estrutura do projeto baseada no padrão Maven:
+  - `src/main` para código-fonte da aplicação
+  - `src/test` para código-fonte de testes unitários
+- Ferramentas e práticas:
+  - Testes unitários (JUnit ou framework equivalente, presumido)
+  - Gerenciamento de dependências e builds via maven
+- Potencial uso de bibliotecas padrão Java para operações matemáticas e entrada de dados
 
 ---
 
-## 📂 Estrutura de Diretórios
+## 📁 Estrutura do Projeto
 
 ```
 Calculo_Area/
-├── README.md               # Documentação do projeto
-├── pom.xml                 # Configuração do Maven (dependências, plugins, info do projeto)
+├── README.md                   # Documentação do projeto
+├── pom.xml                     # Configuração do Maven (dependências, plugins e builds)
 ├── src/
-│   ├── main/               # Código-fonte da aplicação
-│   │   └── java/           # Classes principais (pacotes e implementações)
-│   └── test/               # Testes automatizados (unitários/integrados)
-├── target/                 # Diretório gerado pelo Maven após build
-│   ├── classes/            # Classes compiladas do código principal
-│   └── test-classes/       # Classes compiladas dos testes
+│   ├── main/                  # Código-fonte principal da aplicação
+│   └── test/                  # Testes unitários do código-fonte
+└── target/
+    ├── classes/               # Código compilado da aplicação
+    └── test-classes/          # Código compilado dos testes
 ```
 
-- **src/main**: Contém a implementação das funcionalidades referentes ao cálculo de áreas.  
-- **src/test**: Contém testes unitários que garantem a precisão e validade dos cálculos implementados.  
-- **pom.xml**: Arquivo de configuração Maven responsável pelo ciclo de vida do projeto.  
-- **target/**: Diretório gerado automaticamente pelo Maven contendo os artefatos compilados.  
+- **`README.md`**: Documento principal do projeto
+- **`pom.xml`**: Arquivo de configuração Maven com dependências e configurações de build
+- **`src/main/`**: Diretório que contém todo o código Java da aplicação
+- **`src/test/`**: Contém os testes unitários, garantindo qualidade e robustez
+- **`target/`**: Diretório gerado automaticamente pelo Maven onde ficam os artefatos compilados
 
 ---
 
 ## 🚀 Instalação e Execução
 
-### Pré-requisitos
+Para executar o projeto localmente, siga os passos abaixo:
 
-- Ambiente Java JDK 11 (ou superior) instalado e configurado no PATH  
-- Apache Maven instalado (versão 3.6+ recomendada)  
-- Git (para clonar o repositório)  
+1. Clone o repositório:
 
-### Passos para instalação
-
-1. Clone o repositório:  
 ```bash
-git clone https://github.com/usuario/Calculo_Area.git
+git clone https://github.com/H-Saimon/Calculo_Area.git
 ```
 
-2. Acesse o diretório do projeto:  
+2. Acesse o diretório do projeto:
+
 ```bash
 cd Calculo_Area
 ```
 
-3. Compile e construa o projeto com Maven:  
+3. Compile o projeto e execute os testes utilizando Maven:
+
 ```bash
 mvn clean install
 ```
 
-4. Execute a aplicação (exemplo de execução via linha de comando, adaptável conforme implementação):  
+4. Execute a aplicação (substitua `MainClass` pelo nome da classe principal, se aplicável):
+
 ```bash
-mvn exec:java -Dexec.mainClass="com.seuprojeto.MainClass"
+mvn exec:java -Dexec.mainClass="com.seupacote.MainClass"
 ```
 
-*Observação*: Substitua `com.seuprojeto.MainClass` pela classe principal responsável pela execução do programa.  
+*Obs.:* Ajuste o pacote e a classe principal conforme configuração real do projeto.
 
 ---
 
-## 📋 Endpoints
+## 📡 Endpoints
 
-> **Nota**: Este projeto não implementa API web, portanto não possui endpoints REST.  
+> Este projeto não expõe endpoints via API REST. Caso futuramente haja implementação de API, esta sessão será atualizada.
 
 ---
 
 ## ✅ Testes
 
-- Framework de testes: JUnit (presumido pelo padrão Maven/Java)  
-- Para executar os testes unitários:  
+- A base de código contém testes unitários localizados em `src/test/`.
+- Assegurando a precisão dos cálculos e a integridade dos métodos.
+- Executar testes pelo Maven com:
+
 ```bash
 mvn test
 ```
 
-- Cobertura de testes: Implementação garante que cada cálculo de área possui testes que validam os casos típicos e limites.  
-- Estratégia: Testes unitários focados em cálculo, verificando entrada, saída e tratamento de erros.  
+- Relatórios de cobertura e resultados dos testes podem ser gerados por plugins Maven adicionais, conforme configuração.
 
 ---
 
-## 🚢 Deploy
+## 🔒 Segurança
 
-- A publicação do sistema pode ser feita via empacotamento do JAR pelo Maven:  
-```bash
-mvn package
-```
-
-- O arquivo resultado estará dentro de `target/` em formato `.jar` executável (se configurado).  
-- Implantação local executando diretamente o JAR com:  
-```bash
-java -jar target/Calculo_Area.jar
-```
-
-- Docker e ferramentas Cloud não estão configurados no escopo atual, podendo ser adicionados futuramente.  
+- Validação rigorosa de entrada de dados para garantir cálculos corretos e evitar erros de lógica.
+- Nenhuma funcionalidade relacionada à autenticação ou autorização no escopo atual.
+- Proteções contra dados inválidos implementadas via validação de parâmetros.
 
 ---
 
-## 🔐 Segurança
+## ☁️ Deploy
 
-- Não há integração com autenticação ou autorização no projeto, pois é uma aplicação para cálculo local.  
-- Validações básicas de entrada garantem a integridade dos dados para evitar erros e comportamento inesperado.  
-- Recomenda-se realizar sanitização e validações adicionais se expandir para APIs/Web.  
+- O projeto não possui configuração padrão para Docker ou deploy em cloud atualmente.
+- Pode ser embutido em sistemas maiores ou empacotado para distribuição conforme necessidade.
+- Sugere-se utilização futura de Docker para facilitar o deploy em ambientes isolados.
 
 ---
 
 ## 🚧 Melhorias Futuras
 
-- Implementar interface gráfica para facilitar uso não programático  
-- Adicionar suporte para mais figuras geométricas e parametrizações flexíveis  
-- Implementar API REST para disponibilizar cálculos via serviços web  
-- Integrar pipelines de CI/CD e geração de relatórios de cobertura automatizados  
-- Uso de containers Docker para facilitar deploy e execução em ambientes distintos  
-- Inclusão de logging e tratamento de exceções aprimorado para maior resiliência  
+- Adicionar suporte para mais formas geométricas, como trapézio, losango e polígonos irregulares.
+- Implementar uma interface gráfica amigável (ex. JavaFX ou Swing).
+- Disponibilizar uma API REST para acesso remoto aos cálculos.
+- Adicionar suporte internacionalização (i18n).
+- Configurar integração contínua com CI/CD e análise estática de código.
+- Gerar relatórios de execução e históricos de cálculos.
+- Containerização via Docker e scripts para deployment automatizado.
 
 ---
 
-## 🤝 Contribuição
+## 👨‍💻 Autor
 
-Contribuições são muito bem-vindas! Para colaborar com o projeto, siga as instruções abaixo:
-
-1. Faça um fork do repositório  
-2. Crie uma branch para sua feature ou correção:  
-   ```bash
-   git checkout -b feature/nome-da-feature
-   ```
-3. Faça commits claros e descritivos  
-4. Envie suas mudanças para o repositório remoto  
-5. Abra um Pull Request detalhando as alterações propostas  
-
-Por favor, leia o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) (se existir) para regras mais específicas e práticas recomendadas.  
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença **MIT** – consulte o arquivo [LICENSE](LICENSE) para detalhes.
-
----
-
-> Desenvolvido com excelência por [Seu Nome ou Organização] – liberdade para inovar e simplificar cálculos geométricos em Java.
+Desenvolvido por **Hítalon Saimon Santos Silva**  
+GitHub: https://github.com/H-Saimon
